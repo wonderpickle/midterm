@@ -1,0 +1,103 @@
+<html>
+
+<head> 
+<title>Guess the Color</title>
+
+
+<style>
+
+body{
+	margin:0;
+	background-image: url("background.jpg");
+
+}
+
+h1{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 100px;
+	text-align: center;
+}
+.row{
+	width: 100%;
+}
+
+.column1{
+	font-family: 'Bai Jamjuree', sans-serif;
+	float:left;
+	width: 35%;
+	padding-left: 10%;
+}
+.column2{
+	width:35%;
+	float:right;
+	padding-right: 10%;
+	padding-top: 2%;
+}
+.rules{
+	padding-left: 0%;
+	font-size: 40px;
+	text-decoration: underline;
+}
+.information{
+	line-height: 1.7em;
+	width:90%;
+	font-size: 30px;
+	text-indent: 1.5em;
+}
+.footer{
+	display: flow-root;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-family: 'Nanum Brush Script', cursive;
+}
+.button {
+    background-color: #C0392B;
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: .5em;
+    letter-spacing: .2em;
+    text-decoration: none;
+    display: inline-block;
+
+    font-size: 24px;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+
+</style>
+
+
+ </head>
+
+<body>
+
+<div class = "header">
+<h1> Guess the Color </h1>
+</div>
+
+<div class = "row">
+	<div class = "column1">
+<h3 class ="rules"> Rules </h3>
+
+<p class = "information ">	Guess the random word of colors that are provided. Your given 5 attempts to guess the letter of the word. If you can get it in less than 5 you win!</p>
+</div>
+<div class = "column2">
+	<img src = "list.jpg" alt="list of colors" width = "550" height=" 350">
+</div>
+</div>
+
+<div class= "footer">
+<a href="color_game.html" class ="button"> PLAY</a>
+
+</div>
+
+
+
+
+</body>
+<script type = "text/javascript" src ="color.js"></script>
+</html>
