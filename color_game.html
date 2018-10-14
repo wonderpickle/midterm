@@ -34,7 +34,7 @@ body{
 }
 
 .column1{
-	border:3px solid black;
+	
 	width:100%;
 	float:left;
 	margin-left: 0%;
@@ -66,7 +66,7 @@ h3{
 	margin-left: auto;
 }
 .errors{
-	border: 3px blue solid;
+	border: 3px grey solid;
 	height: 25%;
 	width:25%;
 	float:right;
@@ -74,29 +74,32 @@ h3{
 	margin-top:5%;
 }
 input[type=text]{
+
 	margin-top: 2%;
-   margin-left: 12%;
+   margin-left: 14%;
    padding: 5px 0px;
-    box-sizing: border-box;
+
     border: 1px solid #555;
     background-color: lightgrey;
 }
-input[type=submit]{
+input[type=button]{
 	padding-top: 5px 0px;
 	font-size: 18px;
-	font-weight: bold;
+	font-weight: none;
 	background-color: pink;
+	
+	margin-top:3%;
 }
 .column2{
 	
-	border:3px solid white;
+
 	width:100%;
 	float:left;
 	margin-left: 0%;
 }
 #underscore{
 	margin-top: 5%;
-	margin-left:12%;
+	margin-left:10%;
 	width:50%;
 	font-size: 100px;
 	padding: 20px;
@@ -120,18 +123,22 @@ input[type=submit]{
 <div class ="wrongletters">
 	<h3>Wrong Letters</h3>
 	<div class="usedletters">
+		<p id="wrongLetters"></p>
 	</div>
 </div>
 </div>
 
 <div class = "column2">
 	<div class ="underScore">
+
 	<input type="text" id ="letter" class ="textbox">
-	<input type="button" value ="Submit" class="submitbox" onClick="Letter()"></input>
-	<div class ="errors"></div>
-	<div id="underscore">
-		
+	<button onclick="document.getElementById('letter').value = ''">Clear input field</button>
+
+	<div class ="errors">
+		<p id ="xes"></p>
 	</div>
+		<ul id="underscore">
+		</ul>
 
 	</div>
 	
@@ -139,12 +146,6 @@ input[type=submit]{
 </div>
 
 </div>
-
-
-
-
-
-
 
 </body>
 <script type = "text/javascript" src ="color.js"></script>
